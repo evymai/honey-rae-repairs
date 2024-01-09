@@ -1,5 +1,5 @@
 export const getAllTickets = async () => {
-  return await fetch(`http://localhost:8088/serviceTickets`).then((res) =>
+  return await fetch(`http://localhost:8088/serviceTickets?_embed=employeeTickets`).then((res) =>
     res.json()
   )
 }
